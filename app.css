@@ -30,6 +30,11 @@ text {
   fill: #999;
 }
 
+#meridiem {
+  text-transform: uppercase;
+  fill: #bbb;
+}
+
 rect, circle {
   fill: #f7f7f7;
   -webkit-transition: fill .5s linear;

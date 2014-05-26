@@ -3,10 +3,12 @@ $(function() {
   function displayTime() {
     var currentTime = new Date(),
       hours = currentTime.getHours(),
-      minutes = currentTime.getMinutes();
+      minutes = currentTime.getMinutes(),
+      meridiem = "AM";
 
     if (hours > 12) {
       hours = hours - 12;
+      meridiem = "PM";
     }
 
     if (hours === 0) {
@@ -21,6 +23,7 @@ $(function() {
 
     $("#hh").text(hours);
     $("#mm").text(minutes);
+    $("#meridiem").text(meridiem);
 
     var h = 1;
     while (h <= hours) {
