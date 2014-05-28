@@ -19,11 +19,14 @@ $(function() {
       minutes = "0" + minutes;
     }
 
+    $("#hours").css("fill", "#eee");
+    $("#minutes").css("fill", "#eee");
+
     $(".is-active").attr("class", "");
 
-    $("#hh").text(hours);
-    $("#mm").text(minutes);
-    $("#meridiem").text(meridiem);
+    $("#hh").text(hours).css("fill", "#999");
+    $("#mm").text(minutes).css("fill", "#999");
+    $("#meridiem").text(meridiem).css("fill", "#bbb");
 
     var h = 1;
     while (h <= hours) {

@@ -13,7 +13,11 @@ body {
   padding: 0;
 }
 
-body { background-color: #f7f7f7; }
+body {
+  background-color: #fff;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 18px;
+}
 
 /* Watchface */
 #watchface-model-a {
@@ -24,23 +28,25 @@ body { background-color: #f7f7f7; }
 
 .is-active { fill: #222; }
 
-text {
-  font-family: "PT Sans", Helvetica, sans-serif;
-  font-size: 18px;
-  fill: #999;
-}
-
+#hours,
+#minutes,
+#hh,
+#mm,
 #meridiem {
-  text-transform: uppercase;
-  fill: #bbb;
+  fill: #fff;
 }
 
-rect, circle {
-  fill: #f7f7f7;
-  -webkit-transition: fill .5s linear;
-     -moz-transition: fill .5s linear;
-      -ms-transition: fill .5s linear;
-          transition: fill .5s linear;
+#meridiem { text-transform: uppercase; }
+
+circle,
+rect,
+#hh,
+#mm,
+#meridiem {
+  -webkit-transition: fill 2s ease;
+     -moz-transition: fill 2s ease;
+      -ms-transition: fill 2s ease;
+          transition: fill 2s ease;
 }
 
 /* Footer */
