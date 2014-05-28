@@ -19,10 +19,14 @@ body {
   font-size: 18px;
 }
 
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
 /* Watchface */
 #watchface-model-a {
   width: 422px;
-  height: 438px;
   margin: 2rem auto;
 }
 
